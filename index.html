@@ -1,0 +1,2300 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Chương trình an sao TCP</title>
+	<meta http-equiv="content-type"
+		content="text/html;charset=utf-8" />
+<link href="tcp.css" rel="stylesheet" type="text/css" />
+
+
+	  <globalization requestEncoding="utf-8" responseEncoding="utf-8" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Xem lá số tử vi</title>
+<meta name="keywords" content="An sao, Trung Châu Lý Số" />
+<script type='text/javascript' src='jquery.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function () {
+$.localScroll();
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+
+<div id="background">
+
+
+
+
+<div id="templatemo_wrapper">
+	<div id="templatemo_header" >
+
+    </div> <!-- END of -->
+
+    <div id="templatmeo_menu">
+    	<ul>
+
+<div id="site_title">
+
+		</ul>
+    </div> <!-- END of -->
+
+    <div id="templatemo_main">
+
+		<div align="center">
+		<div id='cssmenu'>
+
+</div>
+		</div>
+
+
+
+		<div id="home" class="main_box">
+
+
+			<p>
+  <canvas id="myCanvas" width="1200" height="680" style="display:none">
+		   </canvas>
+      </p>  <p>  </p>
+	  &nbsp;
+
+      <h1 align="center"> <p>  </p>  <p>  </p>
+        CHƯƠNG TRÌNH AN LÁ SỐ TỬ VI
+
+      </h1>
+      <p>
+        <h3 align="center">
+          http://xemlasotuvi.com
+
+      </h3>
+	  <h3 align="center">
+                &nbsp;&nbsp;http://xemlasotuvi.com
+
+      </h3><h3 align="center">
+
+ &nbsp;
+      </h3>
+      <form name="form1" method="post" action="">
+        <p>
+          <label for="ID_TEN">
+          </label>
+          Tên
+          <label for="ID_TEN">
+          </label>
+          <input type="text" name="ID_TEN" value="An sao Trung Châu Phái" id="ID_TEN" onchange="bacot()">
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;
+          Chọn Dương hay Âm Lịch:
+          <label for="ID_LICH">
+          </label>
+          <select name="ID_LICH"
+          onchange="ShowHideObject(this.options[this.selectedIndex].value)"
+          id="ID_LICH" >
+            <option value="1" selected="selected">
+              Dương Lịch
+            </option>
+            <option value="0">
+              Âm Lịch
+            </option>
+          </select>
+          &nbsp;&nbsp;Giới tính:
+          <label for="ID_GIOITINH">
+          </label>
+
+          <select name="ID_GIOITINH" id="ID_GIOITINH" onchange="bacot()">
+            <option value="1" selected="selected">
+              Nam
+            </option>
+            <option value="0">
+              Nữ
+            </option>
+          </select>
+
+          <fieldset id="idLich_1">
+            <legend>
+              Dương Lịch
+            </legend>
+            <p>
+              Ngày
+              <label for="ID_NGAYDL">
+              </label>
+              <select name="ID_NGAYDL" id="ID_NGAYDL" onchange="bacot()" >
+
+                <option value='1'>
+                  1
+                </option>
+                <option value='2'>
+                  2
+                </option>
+                <option value='3'>
+                  3
+                </option>
+                <option value='4'>
+                  4
+                </option>
+                <option value='5'>
+                  5
+                </option>
+                <option value='6'>
+                  6
+                </option>
+                <option value='7' selected="selected" onchange="bacot()">
+                  7
+                </option>
+                <option value='8'>
+                  8
+                </option>
+                <option value='9'>
+                  9
+                </option>
+                <option value='10'>
+                  10
+                </option>
+                <option value='11'>
+                  11
+                </option>
+                <option value='12'>
+                  12
+                </option>
+                <option value='13'>
+                  13
+                </option>
+                <option value='14'>
+                  14
+                </option>
+                <option value='15'>
+                  15
+                </option>
+                <option value='16'>
+                  16
+                </option>
+                <option value='17'>
+                  17
+                </option>
+                <option value='18'>
+                  18
+                </option>
+                <option value='19'>
+                  19
+                </option>
+                <option value='20'>
+                  20
+                </option>
+                <option value='21'>
+                  21
+                </option>
+                <option value='22'>
+                  22
+                </option>
+                <option value='23'>
+                  23
+                </option>
+                <option value='24'>
+                  24
+                </option>
+                <option value='25'>
+                  25
+                </option>
+                <option value='26'>
+                  26
+                </option>
+                <option value='27'>
+                  27
+                </option>
+                <option value='28'>
+                  28
+                </option>
+                <option value='29'>
+                  29
+                </option>
+                <option value='30'>
+                  30
+                </option>
+                <option value='31'>
+                  31
+                </option>
+              </select>
+              Tháng
+              <label for="ID_THANGDL">
+              </label>
+              <select name="ID_THANGDL" id="ID_THANGDL" onchange="bacot()" >
+                <option value='1'>
+                  1
+                </option>
+                <option value='2'>
+                  2
+                </option>
+                <option value='3'>
+                  3
+                </option>
+                <option value='4'>
+                  4
+                </option>
+                <option value='5'>
+                  5
+                </option>
+                <option value='6'>
+                  6
+                </option>
+                <option value='7'>
+                  7
+                </option>
+                <option value='8'>
+                  8
+                </option>
+                <option value='9'>
+                  9
+                </option>
+                <option value='10' selected="selected">
+                  10
+                </option>
+                <option value='11'>
+                  11
+                </option>
+                <option value='12'>
+                  12
+                </option>
+              </select>
+              Năm
+              <label for="ID_NAMDL">
+              </label>
+              <select name="ID_NAMDL" id="ID_NAMDL" onchange="bacot()" >
+                <option value="1994">
+                  1994
+                </option>
+                <option value="2029">
+                  2029
+                </option>
+                <option value="2028">
+                  2028
+                </option>
+                <option value="2027">
+                  2027
+                </option>
+                <option value="2026">
+                  2026
+                </option>
+                <option value="2025">
+                  2025
+                </option>
+                <option value="2024">
+                  2024
+                </option>
+                <option value="2023">
+                  2023
+                </option>
+                <option value="2022">
+                  2022
+                </option>
+                <option value="2021">
+                  2021
+                </option>
+                <option value="2020">
+                  2020
+                </option>
+                <option value="2019">
+                  2019
+                </option>
+                <option value="2018">
+                  2018
+                </option>
+                <option value="2017">
+                  2017
+                </option>
+                <option value="2016">
+                  2016
+                </option>
+                <option value="2015">
+                  2015
+                </option>
+                <option value="2014">
+                  2014
+                </option>
+                <option value="2013">
+                  2013
+                </option>
+                <option value="2012">
+                  2012
+                </option>
+                <option value="2011">
+                  2011
+                </option>
+                <option value="2010">
+                  2010
+                </option>
+                <option value="2009">
+                  2009
+                </option>
+                <option value="2008">
+                  2008
+                </option>
+                <option value="2007">
+                  2007
+                </option>
+                <option value="2006">
+                  2006
+                </option>
+                <option value="2005">
+                  2005
+                </option>
+                <option value="2004">
+                  2004
+                </option>
+                <option value="2003">
+                  2003
+                </option>
+                <option value="2002">
+                  2002
+                </option>
+                <option value="2001">
+                  2001
+                </option>
+                <option value="2000">
+                  2000
+                </option>
+                <option value="1999">
+                  1999
+                </option>
+                <option value="1998">
+                  1998
+                </option>
+                <option value="1997">
+                  1997
+                </option>
+                <option value="1996">
+                  1996
+                </option>
+                <option value="1995">
+                  1995
+                </option>
+                <option value="1994">
+                  1994
+                </option>
+                <option value="1993">
+                  1993
+                </option>
+                <option value="1992">
+                  1992
+                </option>
+                <option value="1991">
+                  1991
+                </option>
+                <option value="1990">
+                  1990
+                </option>
+                <option value="1989" selected="selected">
+                  1989
+                </option>
+                <option value="1988">
+                  1988
+                </option>
+                <option value="1987">
+                  1987
+                </option>
+                <option value="1986">
+                  1986
+                </option>
+                <option value="1985">
+                  1985
+                </option>
+                <option value="1984">
+                  1984
+                </option>
+                <option value="1983">
+                  1983
+                </option>
+                <option value="1982">
+                  1982
+                </option>
+                <option value="1981">
+                  1981
+                </option>
+                <option value="1980">
+                  1980
+                </option>
+                <option value="1979">
+                  1979
+                </option>
+                <option value="1978">
+                  1978
+                </option>
+                <option value="1977">
+                  1977
+                </option>
+                <option value="1976">
+                  1976
+                </option>
+                <option value="1975">
+                  1975
+                </option>
+                <option value="1974">
+                  1974
+                </option>
+                <option value="1973">
+                  1973
+                </option>
+                <option value="1972">
+                  1972
+                </option>
+                <option value="1971">
+                  1971
+                </option>
+                <option value="1970">
+                  1970
+                </option>
+                <option value="1969">
+                  1969
+                </option>
+                <option value="1968">
+                  1968
+                </option>
+                <option value="1967">
+                  1967
+                </option>
+                <option value="1966">
+                  1966
+                </option>
+                <option value="1965">
+                  1965
+                </option>
+                <option value="1964">
+                  1964
+                </option>
+                <option value="1963">
+                  1963
+                </option>
+                <option value="1962">
+                  1962
+                </option>
+                <option value="1961">
+                  1961
+                </option>
+                <option value="1960">
+                  1960
+                </option>
+                <option value="1959">
+                  1959
+                </option>
+                <option value="1958">
+                  1958
+                </option>
+                <option value="1957">
+                  1957
+                </option>
+                <option value="1956">
+                  1956
+                </option>
+                <option value="1955">
+                  1955
+                </option>
+                <option value="1954">
+                  1954
+                </option>
+                <option value="1953">
+                  1953
+                </option>
+                <option value="1952">
+                  1952
+                </option>
+                <option value="1951">
+                  1951
+                </option>
+                <option value="1950">
+                  1950
+                </option>
+                <option value="1949">
+                  1949
+                </option>
+                <option value="1948">
+                  1948
+                </option>
+                <option value="1947">
+                  1947
+                </option>
+                <option value="1946">
+                  1946
+                </option>
+                <option value="1945">
+                  1945
+                </option>
+                <option value="1944">
+                  1944
+                </option>
+                <option value="1943">
+                  1943
+                </option>
+                <option value="1942">
+                  1942
+                </option>
+                <option value="1941">
+                  1941
+                </option>
+                <option value="1940">
+                  1940
+                </option>
+                <option value="1939">
+                  1939
+                </option>
+                <option value="1938">
+                  1938
+                </option>
+                <option value="1937">
+                  1937
+                </option>
+                <option value="1936">
+                  1936
+                </option>
+                <option value="1935">
+                  1935
+                </option>
+                <option value="1934">
+                  1934
+                </option>
+                <option value="1933">
+                  1933
+                </option>
+                <option value="1932">
+                  1932
+                </option>
+                <option value="1931">
+                  1931
+                </option>
+                <option value="1930">
+                  1930
+                </option>
+                <option value="1929">
+                  1929
+                </option>
+                <option value="1928">
+                  1928
+                </option>
+                <option value="1927">
+                  1927
+                </option>
+                <option value="1926">
+                  1926
+                </option>
+                <option value="1925">
+                  1925
+                </option>
+                <option value="1924">
+                  1924
+                </option>
+                <option value="1923">
+                  1923
+                </option>
+                <option value="1922">
+                  1922
+                </option>
+                <option value="1921">
+                  1921
+                </option>
+                <option value="1920">
+                  1920
+                </option>
+                <option value="1919">
+                  1919
+                </option>
+                <option value="1918">
+                  1918
+                </option>
+                <option value="1917">
+                  1917
+                </option>
+                <option value="1916">
+                  1916
+                </option>
+                <option value="1915">
+                  1915
+                </option>
+                <option value="1914">
+                  1914
+                </option>
+                <option value="1913">
+                  1913
+                </option>
+                <option value="1912">
+                  1912
+                </option>
+                <option value="1911">
+                  1911
+                </option>
+                <option value="1910">
+                  1910
+                </option>
+                <option value="1909">
+                  1909
+                </option>
+                <option value="1908">
+                  1908
+                </option>
+                <option value="1907">
+                  1907
+                </option>
+                <option value="1906">
+                  1906
+                </option>
+                <option value="1905">
+                  1905
+                </option>
+                <option value="1904">
+                  1904
+                </option>
+                <option value="1903">
+                  1903
+                </option>
+                <option value="1902">
+                  1902
+                </option>
+                <option value="1901">
+                  1901
+                </option>
+                <option value="1900">
+                  1900
+                </option>
+                <option value="1899">
+                  1899
+                </option>
+                <option value="1898">
+                  1898
+                </option>
+                <option value="1897">
+                  1897
+                </option>
+                <option value="1896">
+                  1896
+                </option>
+                <option value="1895">
+                  1895
+                </option>
+                <option value="1894">
+                  1894
+                </option>
+                <option value="1893">
+                  1893
+                </option>
+                <option value="1892">
+                  1892
+                </option>
+                <option value="1891">
+                  1891
+                </option>
+                <option value="1890">
+                  1890
+                </option>
+                <option value="1889">
+                  1889
+                </option>
+                <option value="1888">
+                  1888
+                </option>
+                <option value="1887">
+                  1887
+                </option>
+                <option value="1886">
+                  1886
+                </option>
+                <option value="1885">
+                  1885
+                </option>
+                <option value="1884">
+                  1884
+                </option>
+                <option value="1883">
+                  1883
+                </option>
+                <option value="1882">
+                  1882
+                </option>
+                <option value="1881">
+                  1881
+                </option>
+                <option value="1880">
+                  1880
+                </option>
+                <option value="1879">
+                  1879
+                </option>
+                <option value="1878">
+                  1878
+                </option>
+                <option value="1877">
+                  1877
+                </option>
+                <option value="1876">
+                  1876
+                </option>
+                <option value="1875">
+                  1875
+                </option>
+                <option value="1874">
+                  1874
+                </option>
+                <option value="1873">
+                  1873
+                </option>
+                <option value="1872">
+                  1872
+                </option>
+                <option value="1871">
+                  1871
+                </option>
+                <option value="1870">
+                  1870
+                </option>
+                <option value="1869">
+                  1869
+                </option>
+                <option value="1868">
+                  1868
+                </option>
+                <option value="1867">
+                  1867
+                </option>
+                <option value="1866">
+                  1866
+                </option>
+                <option value="1865">
+                  1865
+                </option>
+                <option value="1864">
+                  1864
+                </option>
+                <option value="1863">
+                  1863
+                </option>
+                <option value="1862">
+                  1862
+                </option>
+                <option value="1861">
+                  1861
+                </option>
+                <option value="1860">
+                  1860
+                </option>
+                <option value="1859">
+                  1859
+                </option>
+                <option value="1858">
+                  1858
+                </option>
+                <option value="1857">
+                  1857
+                </option>
+                <option value="1856">
+                  1856
+                </option>
+                <option value="1855">
+                  1855
+                </option>
+                <option value="1854">
+                  1854
+                </option>
+                <option value="1853">
+                  1853
+                </option>
+                <option value="1852">
+                  1852
+                </option>
+                <option value="1851">
+                  1851
+                </option>
+                <option value="1850">
+                  1850
+                </option>
+              </select>
+              Giờ
+              <label for="ID_GIODL">
+              </label>
+              <select name="ID_GIODL" id="ID_GIODL" onchange="bacot()" >
+                <option value="1">
+                  Tý 23h hôm trước tới 1h
+                </option>
+                <option value="2">
+                  Sửu 1h-3h
+                </option>
+                <option value="3">
+                  Dần 3h-5h
+                </option>
+                <option value="4">
+                  Mão 5h-7h
+                </option>
+                <option value="5" selected="selected">
+                  Thìn 7h-9h
+                </option>
+                <option value="6">
+                  Tỵ 9h-11h
+                </option>
+                <option value="7">
+                  Ngọ 11h-13h
+                </option>
+                <option value="8">
+                  Mùi 13h-15h
+                </option>
+                <option value="9">
+                  Thân 15h-17h
+                </option>
+                <option value="10">
+                  Dậu 17h-19h
+                </option>
+                <option value="11">
+                  Tuất 19h-21h
+                </option>
+                <option value="12">
+                  Hợi 21h-23h
+                </option>
+              </select>
+            </p>
+        </fieldset>
+        <fieldset id="idLich_0" style="display:none">
+          <legend>
+            Âm Lịch
+          </legend>
+          <p>
+            Ngày
+            <label for="ID_NGAY">
+            </label>
+            <select name="ID_NGAY" id="ID_NGAY"  onchange="bacot()" >
+                     <option value='1'>
+                1
+              </option>
+              <option value='2'>
+                2
+              </option>
+              <option value='3'>
+                3
+              </option>
+              <option value='4'>
+                4
+              </option>
+              <option value='5'>
+                5
+              </option>
+              <option value='6'>
+                6
+              </option>
+              <option value='7'>
+                7
+              </option>
+              <option value='8'>
+                8
+              </option>
+              <option value='9'>
+                9
+              </option>
+              <option value='10'>
+                10
+              </option>
+              <option value='11'>
+                11
+              </option>
+              <option value='12'>
+                12
+              </option>
+              <option value='13'>
+                13
+              </option>
+              <option value='14'>
+                14
+              </option>
+              <option value='15' selected="selected">
+                15
+              </option>
+              <option value='16'>
+                16
+              </option>
+              <option value='17'>
+                17
+              </option>
+              <option value='18'>
+                18
+              </option>
+              <option value='19'>
+                19
+              </option>
+              <option value='20'>
+                20
+              </option>
+              <option value='21'>
+                21
+              </option>
+              <option value='22'>
+                22
+              </option>
+              <option value='23'>
+                23
+              </option>
+              <option value='24'>
+                24
+              </option>
+              <option value='25'>
+                25
+              </option>
+              <option value='26'>
+                26
+              </option>
+              <option value='27'>
+                27
+              </option>
+              <option value='28'>
+                28
+              </option>
+              <option value='29'>
+                29
+              </option>
+              <option value='30'>
+                30
+              </option>
+              <option value='31'>
+                31
+              </option>
+            </select>
+            Tháng Âm
+            <label for="ID_THANG">
+            </label>
+            <select name="ID_THANG" id="ID_THANG"  onchange="bacot()" >
+              <option value='1'>
+                1
+              </option>
+              <option value='2'>
+                2
+              </option>
+              <option value='3'>
+                3
+              </option>
+              <option value='4'>
+                4
+              </option>
+              <option value='5'>
+                5
+              </option>
+              <option value='6' selected="selected">
+                6
+              </option>
+              <option value='7'>
+                7
+              </option>
+              <option value='8'>
+                8
+              </option>
+              <option value='9'>
+                9
+              </option>
+              <option value='10'>
+                10
+              </option>
+              <option value='11'>
+                11
+              </option>
+              <option value='12'>
+                12
+              </option>
+            </select>
+            Năm
+            <label for="ID_CANNAM">
+            </label>
+            <select name="ID_CANNAM" value="8" id="ID_CANNAM">
+              <option value="1">
+                Giáp
+              </option>
+              <option value="2">
+                Ất
+              </option>
+              <option value="3">
+                Bính
+              </option>
+              <option value="4">
+                Đinh
+              </option>
+              <option value="5">
+                Mậu
+              </option>
+              <option value="6" selected="selected">
+                Kỷ
+              </option>
+              <option value="7">
+                Canh
+              </option>
+              <option value="8">
+                Tân
+              </option>
+              <option value="9">
+                Nhâm
+              </option>
+              <option value="10">
+                Quý
+              </option>
+            </select>
+            <label for="ID_CHINAM">
+            </label>
+            <select name="ID_CHINAM" value="Dậu" id="ID_CHINAM" >
+              <option value="1">
+                Tý
+              </option>
+              <option value="2">
+                Sửu
+              </option>
+              <option value="3">
+                Dần
+              </option>
+              <option value="4">
+                Mão
+              </option>
+              <option value="5">
+                Thìn
+              </option>
+              <option value="6" selected="selected">
+                Tỵ
+              </option>
+              <option value="7">
+                Ngọ
+              </option>
+              <option value="8">
+                Mùi
+              </option>
+              <option value="9">
+                Thân
+              </option>
+              <option value="10">
+                Dậu
+              </option>
+              <option value="11">
+                Tuất
+              </option>
+              <option value="12">
+                Hợi
+              </option>
+            </select>
+            Giờ
+            <label for="ID_GIO">
+            </label>
+            <select name="ID_GIO" id="ID_GIO"  onchange="bacot()" >
+              <option value="1">
+                Tý
+              </option>
+              <option value="2">
+                Sửu
+              </option>
+              <option value="3">
+                Dần
+              </option>
+              <option value="4">
+                Mão
+              </option>
+              <option value="5">
+                Thìn
+              </option>
+              <option value="6" selected="selected">
+                Tỵ
+              </option>
+              <option value="7">
+                Ngọ
+              </option>
+              <option value="8">
+                Mùi
+              </option>
+              <option value="9">
+                Thân
+              </option>
+              <option value="10">
+                Dậu
+              </option>
+              <option value="11">
+                Tuất
+              </option>
+              <option value="12">
+                Hợi
+              </option>
+            </select>
+          </p>
+        </p>
+      </fieldset> <p>
+	  <h3 align="center">
+
+      </h3>
+      <fieldset>
+        <legend>
+          Tùy chọn nâng cao
+        </legend>
+        <table id="customers" align="center">
+          <tr>
+            <td>
+              <input name="ID_TAPDIEU" type="checkbox" id="ID_TAPDIEU" checked onchange="bacot()">
+              <label for="ID_TAPDIEU">
+              </label>
+              An tạp diệu
+            </td>
+            <td>
+              <input name="ID_THAITUE" type="checkbox" id="ID_THAITUE" checked onchange="bacot()">
+              <label for="ID_THAITUE">
+              </label>
+              An vòng Thái Tuế
+            </td>
+            <td>
+              <input name="ID_TUONGTINH" type="checkbox" id="ID_TUONGTINH" checked onchange="bacot()">
+              <label for="ID_TUONGTINH">
+              </label>
+              An vòng Tướng Tinh
+            </td>
+            <td>
+              <input name="ID_PHIEUPHIEU" type="checkbox" size="5" id="ID_PHIEUPHIEU" unchecked onchange="bacot()">
+              <label for="ID_PHIEUPHIEU">
+              </label>
+              An Phiêu Phiêu
+			  <input name="ID_VEPHIEUPHIEU" type="checkbox" size="5" id="ID_VEPHIEUPHIEU" unchecked onchange="bacot()">
+              <label for="ID_VEPHIEUPHIEU">
+              </label>
+          Đồ họa
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="ID_VDTTL" id="ID_VDTTL" unchecked onchange="bacot()">
+              <label for="ID_VDTTL">
+              </label>
+              An theo VĐTTL
+            </td>
+            <td>
+              <input type="checkbox" name="ID_DIABAN" id="ID_DIABAN" unchecked onchange="bacot()">
+              <label for="ID_DIABAN">
+              </label>
+              An lá số địa bàn.
+            </td>
+            <td>
+              <input type="checkbox" name="ID_NHANBAN" id="ID_NHANBAN" unchecked onchange="bacot()">
+              <label for="ID_NHANBAN">
+              </label>
+              An lá số nhân bàn.
+            </td>
+            <td> <input type="checkbox" name="ID_LID_LUUDAIVAN" id="ID_LUUDAIVAN" checked onchange="bacot()">
+              <label for="ID_LUUDAIVAN">
+              </label>
+              Lưu Đại Vận (Đv.)&nbsp;&nbsp;
+            </td>
+          </tr>
+          <tr>
+
+            <td>
+              <input type="checkbox" name="ID_LUUNIEN" id="ID_LUUNIEN" checked onchange="bacot()">
+              <label for="ID_LUUNIEN">
+              </label>
+              Lưu Niên (L.)
+              <label for="ID_NAMXEMDL">
+              </label>
+              <select name="ID_NAMXEMDL" id="ID_NAMXEMDL" class='big-input' onchange="bacot()" >
+                <option value="2029">
+                  2029
+                </option>
+                <option value="2028">
+                  2028
+                </option>
+                <option value="2027">
+                  2027
+                </option>
+                <option value="2026">
+                  2026
+                </option>
+                <option value="2025">
+                  2025
+                </option>
+                <option value="2024">
+                  2024
+                </option>
+                <option value="2023">
+                  2023
+                </option>
+                <option value="2022">
+                  2022
+                </option>
+                <option value="2021">
+                  2021
+                </option>
+                <option value="2020">
+                  2020
+                </option>
+                <option value="2019">
+                  2019
+                </option>
+                <option value="2018">
+                  2018
+                </option>
+                <option value="2017">
+                  2017
+                </option>
+                <option value="2016">
+                  2016
+                </option>
+                <option value="2015">
+                  2015
+                </option>
+                <option value="2014">
+                  2014
+                </option>
+                <option value="2013"selected="selected">
+                  2013
+                </option>
+                <option value="2012">
+                  2012
+                </option>
+                <option value="2011">
+                  2011
+                </option>
+                <option value="2010">
+                  2010
+                </option>
+                <option value="2009">
+                  2009
+                </option>
+                <option value="2008">
+                  2008
+                </option>
+                <option value="2007">
+                  2007
+                </option>
+                <option value="2006">
+                  2006
+                </option>
+                <option value="2005">
+                  2005
+                </option>
+                <option value="2004">
+                  2004
+                </option>
+                <option value="2003">
+                  2003
+                </option>
+                <option value="2002">
+                  2002
+                </option>
+                <option value="2001">
+                  2001
+                </option>
+                <option value="2000">
+                  2000
+                </option>
+                <option value="1999">
+                  1999
+                </option>
+                <option value="1998">
+                  1998
+                </option>
+                <option value="1997">
+                  1997
+                </option>
+                <option value="1996">
+                  1996
+                </option>
+                <option value="1995">
+                  1995
+                </option>
+                <option value="1994">
+                  1994
+                </option>
+                <option value="1993">
+                  1993
+                </option>
+                <option value="1992">
+                  1992
+                </option>
+                <option value="1991">
+                  1991
+                </option>
+                <option value="1990">
+                  1990
+                </option>
+                <option value="1989">
+                  1989
+                </option>
+                <option value="1988">
+                  1988
+                </option>
+                <option value="1987">
+                  1987
+                </option>
+                <option value="1986">
+                  1986
+                </option>
+                <option value="1985">
+                  1985
+                </option>
+                <option value="1984">
+                  1984
+                </option>
+                <option value="1983">
+                  1983
+                </option>
+                <option value="1982">
+                  1982
+                </option>
+                <option value="1981">
+                  1981
+                </option>
+                <option value="1980">
+                  1980
+                </option>
+                <option value="1979">
+                  1979
+                </option>
+                <option value="1978">
+                  1978
+                </option>
+                <option value="1977">
+                  1977
+                </option>
+                <option value="1976">
+                  1976
+                </option>
+                <option value="1975">
+                  1975
+                </option>
+                <option value="1974">
+                  1974
+                </option>
+                <option value="1973">
+                  1973
+                </option>
+                <option value="1972">
+                  1972
+                </option>
+                <option value="1971">
+                  1971
+                </option>
+                <option value="1970">
+                  1970
+                </option>
+                <option value="1969">
+                  1969
+                </option>
+                <option value="1968">
+                  1968
+                </option>
+                <option value="1967">
+                  1967
+                </option>
+                <option value="1966">
+                  1966
+                </option>
+                <option value="1965">
+                  1965
+                </option>
+                <option value="1964">
+                  1964
+                </option>
+                <option value="1963">
+                  1963
+                </option>
+                <option value="1962">
+                  1962
+                </option>
+                <option value="1961">
+                  1961
+                </option>
+                <option value="1960">
+                  1960
+                </option>
+                <option value="1959">
+                  1959
+                </option>
+                <option value="1958">
+                  1958
+                </option>
+                <option value="1957">
+                  1957
+                </option>
+                <option value="1956">
+                  1956
+                </option>
+                <option value="1955">
+                  1955
+                </option>
+                <option value="1954">
+                  1954
+                </option>
+                <option value="1953">
+                  1953
+                </option>
+                <option value="1952">
+                  1952
+                </option>
+                <option value="1951">
+                  1951
+                </option>
+                <option value="1950">
+                  1950
+                </option>
+                <option value="1949">
+                  1949
+                </option>
+                <option value="1948">
+                  1948
+                </option>
+                <option value="1947">
+                  1947
+                </option>
+                <option value="1946">
+                  1946
+                </option>
+                <option value="1945">
+                  1945
+                </option>
+                <option value="1944">
+                  1944
+                </option>
+                <option value="1943">
+                  1943
+                </option>
+                <option value="1942">
+                  1942
+                </option>
+                <option value="1941">
+                  1941
+                </option>
+                <option value="1940">
+                  1940
+                </option>
+                <option value="1939">
+                  1939
+                </option>
+                <option value="1938">
+                  1938
+                </option>
+                <option value="1937">
+                  1937
+                </option>
+                <option value="1936">
+                  1936
+                </option>
+                <option value="1935">
+                  1935
+                </option>
+                <option value="1934">
+                  1934
+                </option>
+                <option value="1933">
+                  1933
+                </option>
+                <option value="1932">
+                  1932
+                </option>
+                <option value="1931">
+                  1931
+                </option>
+                <option value="1930">
+                  1930
+                </option>
+                <option value="1929">
+                  1929
+                </option>
+                <option value="1928">
+                  1928
+                </option>
+                <option value="1927">
+                  1927
+                </option>
+                <option value="1926">
+                  1926
+                </option>
+                <option value="1925">
+                  1925
+                </option>
+                <option value="1924">
+                  1924
+                </option>
+                <option value="1923">
+                  1923
+                </option>
+                <option value="1922">
+                  1922
+                </option>
+                <option value="1921">
+                  1921
+                </option>
+                <option value="1920">
+                  1920
+                </option>
+                <option value="1919">
+                  1919
+                </option>
+                <option value="1918">
+                  1918
+                </option>
+                <option value="1917">
+                  1917
+                </option>
+                <option value="1916">
+                  1916
+                </option>
+                <option value="1915">
+                  1915
+                </option>
+                <option value="1914">
+                  1914
+                </option>
+                <option value="1913">
+                  1913
+                </option>
+                <option value="1912">
+                  1912
+                </option>
+                <option value="1911">
+                  1911
+                </option>
+                <option value="1910">
+                  1910
+                </option>
+                <option value="1909">
+                  1909
+                </option>
+                <option value="1908">
+                  1908
+                </option>
+                <option value="1907">
+                  1907
+                </option>
+                <option value="1906">
+                  1906
+                </option>
+                <option value="1905">
+                  1905
+                </option>
+                <option value="1904">
+                  1904
+                </option>
+                <option value="1903">
+                  1903
+                </option>
+                <option value="1902">
+                  1902
+                </option>
+                <option value="1901">
+                  1901
+                </option>
+                <option value="1900">
+                  1900
+                </option>
+                <option value="1899">
+                  1899
+                </option>
+                <option value="1898">
+                  1898
+                </option>
+                <option value="1897">
+                  1897
+                </option>
+                <option value="1896">
+                  1896
+                </option>
+                <option value="1895">
+                  1895
+                </option>
+                <option value="1894">
+                  1894
+                </option>
+                <option value="1893">
+                  1893
+                </option>
+                <option value="1892">
+                  1892
+                </option>
+                <option value="1891">
+                  1891
+                </option>
+                <option value="1890">
+                  1890
+                </option>
+                <option value="1889">
+                  1889
+                </option>
+                <option value="1888">
+                  1888
+                </option>
+                <option value="1887">
+                  1887
+                </option>
+                <option value="1886">
+                  1886
+                </option>
+                <option value="1885">
+                  1885
+                </option>
+                <option value="1884">
+                  1884
+                </option>
+                <option value="1883">
+                  1883
+                </option>
+                <option value="1882">
+                  1882
+                </option>
+                <option value="1881">
+                  1881
+                </option>
+                <option value="1880">
+                  1880
+                </option>
+                <option value="1879">
+                  1879
+                </option>
+              </select>
+            </td>
+            <td>
+              <input type="checkbox" name="ID_LUUNGUYET" size="5" id="ID_LUUNGUYET" onchange="bacot()" unchecked >
+              <label for="ID_LUUNGUYET">
+              </label>
+             Lưu Nguyệt (Nv.)
+              <label for="ID_TXTLUUNGUYET">
+              </label>
+
+              <select name="ID_TXTLUUNGUYET" id="ID_TXTLUUNGUYET" onchange="bacot()">
+                <option value='1' selected="selected">
+                  1
+                </option>
+                <option value='2'>
+                  2
+                </option>
+                <option value='3'>
+                  3
+                </option>
+                <option value='4'>
+                  4
+                </option>
+                <option value='5'>
+                  5
+                </option>
+                <option value='6'>
+                  6
+                </option>
+                <option value='7'>
+                  7
+                </option>
+                <option value='8'>
+                  8
+                </option>
+                <option value='9'>
+                  9
+                </option>
+                <option value='10'>
+                  10
+                </option>
+                <option value='11'>
+                  11
+                </option>
+                <option value='12'>
+                  12
+                </option>
+              </select>
+			   </br><input type="checkbox" name="ID_LUUNGUYETNHUAN" size="5" id="ID_LUUNGUYETNHUAN" onchange="bacot()" unchecked > nhuận
+            </td>
+            <td>
+
+			   <input type="checkbox" name="ID_LUUNHAT" id="ID_LUUNHAT" unchecked onchange="bacot()">
+              <label for="ID_LUUNHAT">
+              </label>
+              <label for="ID_TXTLUUNHAT">
+               Lưu Nhật (Nh.)
+              </label>
+              <select name="ID_TXTLUUNHAT" id="ID_TXTLUUNHAT" onchange="bacot()">
+                               <option value='1'>
+                  1
+                </option>
+                <option value='2'>
+                  2
+                </option>
+                <option value='3'>
+                  3
+                </option>
+                <option value='4'>
+                  4
+                </option>
+                <option value='5'>
+                  5
+                </option>
+                <option value='6'>
+                  6
+                </option>
+                <option value='7'>
+                  7
+                </option>
+                <option value='8'>
+                  8
+                </option>
+                <option value='9'>
+                  9
+                </option>
+                <option value='10'>
+                  10
+                </option>
+                <option value='11'>
+                  11
+                </option>
+                <option value='12'>
+                  12
+                </option>
+                <option value='13'>
+                  13
+                </option>
+                <option value='14'>
+                  14
+                </option>
+                <option value='15' selected="selected">
+                  15
+                </option>
+                <option value='16'>
+                  16
+                </option>
+                <option value='17'>
+                  17
+                </option>
+                <option value='18'>
+                  18
+                </option>
+                <option value='19'>
+                  19
+                </option>
+                <option value='20'>
+                  20
+                </option>
+                <option value='21'>
+                  21
+                </option>
+                <option value='22'>
+                  22
+                </option>
+                <option value='23'>
+                  23
+                </option>
+                <option value='24'>
+                  24
+                </option>
+                <option value='25'>
+                  25
+                </option>
+                <option value='26'>
+                  26
+                </option>
+                <option value='27'>
+                  27
+                </option>
+                <option value='28'>
+                  28
+                </option>
+                <option value='29'>
+                  29
+                </option>
+                <option value='30'>
+                  30
+                </option>
+                <option value='31'>
+                  31
+                </option>
+              </select>  <td>
+
+            <input type="checkbox" name="ID_LUUTHOI" id="ID_LUUTHOI" unchecked onchange="bacot()">
+              <label for="ID_LUUTHOI">
+              </label>
+			  Lưu Thời
+              <label for="ID_GIOXEMDL">
+              </label>
+              <select name="ID_GIOXEMDL" id="ID_GIOXEMDL" onchange="bacot()" >
+                <option value="1">
+                  Tý 23h-1h
+                </option>
+                <option value="2">
+                  Sửu 1h-3h
+                </option>
+                <option value="3">
+                  Dần 3h-5h
+                </option>
+                <option value="4">
+                  Mão 5h-7h
+                </option>
+                <option value="5">
+                  Thìn 7h-9h
+                </option>
+                <option value="6">
+                  Tỵ 9h-11h
+                </option>
+                <option value="7"selected="selected">
+                  Ngọ 11h-13h
+                </option>
+                <option value="8">
+                  Mùi 13h-15h
+                </option>
+                <option value="9">
+                  Thân 15h-17h
+                </option>
+                <option value="10">
+                  Dậu 17h-19h
+                </option>
+                <option value="11">
+                  Tuất 19h-21h
+                </option>
+                <option value="12">
+                  Hợi 21h-23h
+                </option>
+
+              </select>   </td>
+            </td>
+          </tr>
+        </tr>
+      </table>
+      &nbsp;&nbsp;
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;
+    </p>
+
+
+    <script language="javascript">
+
+
+
+
+      function toggle() {
+        var ele = document.getElementById("toggleText");
+        var text = document.getElementById("displayText");
+        if(ele.style.display == "block") {
+          ele.style.display = "none";
+          text.innerHTML = "Nhập thêm sao";
+        }
+        else {
+          ele.style.display = "block";
+          text.innerHTML = "Không nhập thêm sao";
+        }
+      }
+
+    </script>
+
+
+
+
+
+    <input type="button" value="Nhập thêm sao" onclick="toggle();"style="height: 55px; width: 140px">
+    <div id="toggleText" style="display: none">
+      <label for="ID_SAO">
+      </label>
+      <input type="text" name="ID_SAO" value="tên sao 1" id="ID_SAO" maxlength="15" size="15">
+      <label for="ID_VITRI">
+      </label>
+      <select name="ID_VITRI" id="ID_VITRI" onchange="bacot()">
+        <option value='0' selected="selected">
+          Không an
+        </option>
+        <option value='1'>
+          Dần
+        </option>
+        <option value='2'>
+          Mão
+        </option>
+        <option value='3'>
+          Thìn
+        </option>
+        <option value='4'>
+          Tỵ
+        </option>
+        <option value='5'>
+          Ngọ
+        </option>
+        <option value='6'>
+          Mùi
+        </option>
+        <option value='7'>
+          Thân
+        </option>
+        <option value='8'>
+          Dậu
+        </option>
+        <option value='9'>
+          Tuất
+        </option>
+        <option value='10'>
+          Hợi
+        </option>
+        <option value='11'>
+          Tý
+        </option>
+        <option value='12'>
+          Sửu
+        </option>
+      </select>
+      &nbsp;&nbsp; 	 &nbsp;&nbsp;
+      <label for="ID_SAO1">
+      </label>
+      <input type="text" name="ID_SAO1" value="tên sao 2" id="ID_SAO1" maxlength="15" size="15" onchange="bacot()">
+      <label for="ID_VITRI1">
+      </label>
+      <select name="ID_VITRI1" id="ID_VITRI1" onchange="bacot()">
+        <option value='0' selected="selected">
+          Không an
+        </option>
+        <option value='1'>
+          Dần
+        </option>
+        <option value='2'>
+          Mão
+        </option>
+        <option value='3'>
+          Thìn
+        </option>
+        <option value='4'>
+          Tỵ
+        </option>
+        <option value='5'>
+          Ngọ
+        </option>
+        <option value='6'>
+          Mùi
+        </option>
+        <option value='7'>
+          Thân
+        </option>
+        <option value='8'>
+          Dậu
+        </option>
+        <option value='9'>
+          Tuất
+        </option>
+        <option value='10'>
+          Hợi
+        </option>
+        <option value='11'>
+          Tý
+        </option>
+        <option value='12'>
+          Sửu
+        </option>
+      </select>
+
+      &nbsp;&nbsp; 	 &nbsp;&nbsp;
+    <label for="ID_CANNAMTHEM">
+    </label>
+    Tứ hóa 1
+    <select name="ID_CANNAMTHEM" value="8" id="ID_CANNAMTHEM" onchange="bacot()">
+	  <option value="0" selected="selected">
+        Không an
+      </option>
+      <option value="1">
+        Giáp
+      </option>
+      <option value="2">
+        Ất
+      </option>
+      <option value="3">
+        Bính
+      </option>
+      <option value="4">
+        Đinh
+      </option>
+      <option value="5">
+        Mậu
+      </option>
+      <option value="6">
+        Kỷ
+      </option>
+
+      <option value="7">
+        Canh
+      </option>
+      <option value="8">
+        Tân
+      </option>
+      <option value="9">
+        Nhâm
+      </option>
+      <option value="10">
+        Quý
+      </option>
+    </select>
+
+    </p>
+    <label for="ID_SAO2">
+    </label>
+    <input type="text" name="ID_SAO2" value="tên sao 3" id="ID_SAO2" maxlength="15" size="15" onchange="bacot()">
+    <label for="ID_VITRI2">
+    </label>
+    <select name="ID_VITRI2" id="ID_VITRI2" onchange="bacot()">
+      <option value='0' selected="selected">
+        Không an
+      </option>
+      <option value='1'>
+        Dần
+      </option>
+      <option value='2'>
+        Mão
+      </option>
+      <option value='3'>
+        Thìn
+      </option>
+      <option value='4'>
+        Tỵ
+      </option>
+      <option value='5'>
+        Ngọ
+      </option>
+      <option value='6'>
+        Mùi
+      </option>
+      <option value='7'>
+        Thân
+      </option>
+      <option value='8'>
+        Dậu
+      </option>
+      <option value='9'>
+        Tuất
+      </option>
+      <option value='10'>
+        Hợi
+      </option>
+      <option value='11'>
+        Tý
+      </option>
+      <option value='12'>
+        Sửu
+      </option>
+    </select>
+    &nbsp;&nbsp; 	 &nbsp;&nbsp;
+    <label for="ID_SAO3">
+    </label>
+    <input type="text" name="ID_SAO3" value="tên sao 4" id="ID_SAO3" maxlength="15" size="15" onchange="bacot()">
+    <label for="ID_VITRI3">
+    </label>
+    <select name="ID_VITRI3" id="ID_VITRI3" onchange="bacot()">
+      <option value='0' selected="selected">
+        Không an
+      </option>
+      <option value='1'>
+        Dần
+      </option>
+      <option value='2'>
+        Mão
+      </option>
+      <option value='3'>
+        Thìn
+      </option>
+      <option value='4'>
+        Tỵ
+      </option>
+      <option value='5'>
+        Ngọ
+      </option>
+      <option value='6'>
+        Mùi
+      </option>
+      <option value='7'>
+        Thân
+      </option>
+      <option value='8'>
+        Dậu
+      </option>
+      <option value='9'>
+        Tuất
+      </option>
+      <option value='10'>
+        Hợi
+      </option>
+      <option value='11'>
+        Tý
+      </option>
+      <option value='12'>
+        Sửu
+      </option>
+    </select>
+
+	  &nbsp;&nbsp; 	 &nbsp;&nbsp;<label for="ID_CANNAMTHEM1">
+    </label>
+     Tứ hóa 2
+    <select name="ID_CANNAMTHEM1" value="8" id="ID_CANNAMTHEM1" onchange="bacot()">
+	  <option value="0"selected="selected">
+        Không an
+      </option>
+      <option value="1">
+        Giáp
+      </option>
+      <option value="2">
+        Ất
+      </option>
+      <option value="3">
+        Bính
+      </option>
+      <option value="4">
+        Đinh
+      </option>
+      <option value="5">
+        Mậu
+      </option>
+      <option value="6">
+        Kỷ
+      </option>
+
+      <option value="7">
+        Canh
+      </option>
+      <option value="8">
+        Tân
+      </option>
+      <option value="9">
+        Nhâm
+      </option>
+      <option value="10">
+        Quý
+      </option>
+    </select>  </p><label for="CHUGIAI">
+      </label>
+      <input type="text" name="CHUGIAI" value=" " id="CHUGIAI" maxlength="350" size="15" onchange="bacot()">
+	  &nbsp;&nbsp; 	 &nbsp;&nbsp;Chú giải
+    <p>
+Giáp Liêm Phá Vũ Dương, Ất Cơ Lương Vi Nguyệt    <p>
+
+Bính Đồng Cơ Xương Liêm, Đinh Nguyệt Đồng Cơ Cự    <p>
+
+Mậu Tham Nguyệt Nhật Cơ, Kỉ Vũ Tham Lương Khúc    <p>
+
+Canh Nhật Vũ Phủ Đồng, Tân Cự Nhật Khúc Xương    <p>
+
+Nhâm Lương Tử Phủ Vũ, Quý Phá Cự Âm Tham    <p>
+    </div>
+</fieldset>
+</form>
+
+<p>
+
+
+</p>
+
+</body>
+</html>
+
+
+<body onload="bacot()">
+
+	 <button onclick=zoomin() style="height: 25px; width: 150px">
+    -
+    </button>
+
+	<button onclick=zoominlv() style="height: 25px; width: 150px">
+    -
+    </button>
+
+	<button onclick=zoominhaicot() style="height: 25px; width: 150px">
+    -
+    </button>
+
+  </br>  <button onclick=bacot() style="height: 55px; width: 150px">
+    An Sao ba cột
+  </button>
+  <button onclick=lieuvo(size,0,0) style="height: 55px; width: 150px">
+    An Sao theo LVCS
+  </button>
+  <button onclick=haicot(size,0,0) style="height: 55px; width: 150px">
+    An Sao hai cột
+  </button>
+
+	  <button onclick=ngaygioxem() style="height: 55px; width: 150px">
+   Thời điểm hiện tại
+    </button>
+
+  </br>
+	<button onclick=zoomout() style="height:25px; width: 150px">
+    +
+    </button>
+	<button onclick=zoomoutlv() style="height:25px; width: 150px">
+    +
+    </button>
+	<button onclick=zoomouthaicot() style="height:25px; width: 150px">
+    +
+    </button>
+  </br>
+<h3 align="center">
+
+
+      </h3>
+		 <img id="canvasImg" >
+
+
+    <fieldset>
+  <p>
+      <section id=editable contenteditable=true>
+        <article>
+          <h3>
+            Chương trình được thiết kế đặc biệt để luận tử vi theo Trung Châu Phái, Phan Tử Ngư và Tử Vân.
+          </h3>
+          <p>
+            Bạn xóa đoạn văn sau và đánh luận giải vào dưới đây
+          </p>
+          <ol><li>
+            Rất tiếc, vì không có điều kiện kinh tế, chúng tôi không thể thuê server để host trình an sao. Vì vậy, các bạn nếu muốn đưa lá số lên diễn đàn, có thể sử dụng một số trang web trung gian như flick.com, upanh.com, photobucket.com, imageshack.us... rồi sử dụng link để chèn vào các diễn đàn.
+			</li><li>
+              M: Miếu &nbsp; V: Vượng &nbsp; Đ: Đắc &nbsp; B: Bình&nbsp; N: Nhàn &nbsp; H: Hãm.
+            </li>
+            <li>
+              Màu của sao được chọn theo ngũ hành. Màu của can chi các cung, các trụ năm tháng ngày giờ được tính theo Ngũ Hành Nạp Âm.
+            </li>
+            <li>
+              Đắc hãm và hành của tinh đẩu được lấy theo Tử Vi Đẩu Số Toàn Thư và Trung Châu Phái.
+            </li>
+            <li>
+              Nếu bạn sinh sau 23 h đêm đến trước 0h, làm ơn chỉnh sớm thêm một ngày. Ví dụ, sinh vào 23h20 ngày 12, ta chọn an theo giờ Tý, ngày 13.
+              <li>
+                L:sao và cung lưu niên, ĐV:sao và cung lưu theo đại vận, N: sao lưu theo Nguyệt vận, Nh: Nhật vận, T: Thời vận.
+                <li>
+                  Yêu cầu người luận giải phán sắc nét 3 hạn quá khứ để kiểm tra trình độ rồi mới tin. Vd "tháng 3 năm 2012 mẹ em có bị sao không".
+				  Không bao giờ tin những người chỉ nói trước tương lai, nhưng không dám nói hạn quá khứ.
+                  <li>
+                    Vòng sao bên trong là vòng theo tiểu vận, vòng bên trong ô là vận năm và tháng theo Lưu Thái Tuế.
+            </li> <li>
+                   Nguyệt Vận (Nv) được tính theo Lưu Đẩu Quân.
+            </li><li>
+                   Chương trình được thiết kế dùng tốt nhất với Chrome, và độ phân giải màn hình từ 1280 trở lên.
+            </li> <li>
+                   Sao tự hóa được đưa thành các hình tròn khi an phiêu phiêu. Màu xanh là hóa kị và màu đỏ là hóa lộc.
+				   Khi bật đồ họa trong phiêu phiêu, các mũi tên từ cung A sang cung B nghĩa là Can cung A tạo ra hóa tại cung B.
+            </li>
+          </ol>
+        </section>
+      </fieldset>
+
+	  &nbsp;&nbsp;
+  <script>
+    var editable = document.getElementById('editable');
+
+    addEvent(editable, 'focus', function () {
+      document.designMode = 'on';
+    });
+    if (localStorage.getItem('contenteditable')) {
+      editable.innerHTML = localStorage.getItem('contenteditable');
+    }
+  </script>
+
+<p>
+
+
+  <script src="bacot1.js" type="text/javascript">
+  </script>
+  <script src="modulelieuvo1.js" type="text/javascript">
+  </script>
+  <script src="modulehaicot1.js" type="text/javascript">
+  </script>
+
+		</div> <!-- END of home -->
+
+        <div class="cleaner"></div>
+            <div class="main_bottom">
+	            <a href="#templatemo_header"></a>
+			</div>
+            <div class="cleaner"></div>
+		</div> <!-- END of contact -->
+    </div>
+
+  <div id="templatemo_footer">
+
+    </div> <!-- END of -->
+</div>
+</body>
+</html>
